@@ -1,0 +1,183 @@
+@font-face{
+    font-family: "Gilroy - Extra Bold";
+    font-style: normal;
+    font-weight: 400;
+    src:local('Gilroyextrabold'),local('Gilroy-Extrabold'),
+        url('../fonts/Gilroyextrabold.woff2') format('woff2'),
+        url('../fonts/gilroyextrabold.woff') format('woff');
+}
+@font-face{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 400;
+    src:local('gilroylight'),local('gilroy'),
+        url('../fonts/gilroylight.woff2') format('woff2'),
+        url('../fonts/gilroylight.woff') format('woff');
+}
+/* @font-face{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src:local('OpenSans-Regular'),local('OpenSans'),
+        url('..fonts/opensans') format('woff2'),
+        url('..fonts/opensans') format('woff');
+}
+@font-face{
+    font-family: "Open Sans Light";
+    font-style: normal;
+    font-weight: 400;
+    src:local('OpenSans-Light'),
+        url('..fonts/opensanslight') format('woff2'),
+        url('..fonts/opensanslight') format('woff');
+} */
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+body a{
+    color: #000000;
+    text-decoration: none;
+}
+.hidden{
+    display: none;
+}
+.container{
+    position: relative;
+    width: 1160px;
+    margin: 0 auto;
+}
+header{
+    position: relative;
+    min-height: 299px;
+    background-color: rgba(240,197,46,0.5);
+    padding: 33px 61px 63px 60px;
+}
+header.container{
+    margin-top: 40px;
+}
+.top-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+.top-nav a{
+    position: relative;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.15px;
+}
+.top-nav input{
+    border: none;
+    background-color: transparent;
+    opacity: 0.5;
+    font:inherit;
+    /* vertical-align: bottom; */
+}
+form{
+    position: relative;
+}
+form::before{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url('../img/search.svg') no-repeat;
+}
+.logo-top{
+    position: absolute;
+    top: -18px;
+    left: 60px;
+    width: 163px;
+    height: 35px;
+}
+.main-nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+.main-nav a{
+    font-family: "Gilroy - Extra Bold";
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+}
+.right-container{
+    min-width: 473px;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.compare::before{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    left:-20px;
+    content:"";
+    width: 10px;
+    height: 10px;
+    background: url('../img/compare.svg') no-repeat;
+}
+.cart::before{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    left:-24px;
+    content:"";
+    width: 12px;
+    height: 12px;
+    background: url('../img/cart.svg') no-repeat;
+}
+.user::before{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    left:-27px;
+    content:"";
+    width: 13px;
+    height: 12px;
+    background: url('../img/user.svg') no-repeat;
+}
+.catalog-menu{
+    min-width: 470px;
+}
+
+/* Главный блок main */
+.slider-wrapper{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: -111px;
+    width: 1010px;
+    min-height: 486px;
+    margin-left: 90px;
+    /* transform:translateX(-50%); */
+}
+.slider-content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 125px;
+    padding-top: 80px;
+}
+.slider-slogan{
+    font-family: "Gilroy - Extra Bold";
+    font-size: 47px;
+    line-height: 56px;
+    letter-spacing: 0.67px;
+    margin-bottom: 18px;
+}
+.slider-description{
+    letter-spacing: 0.15px;
+    line-height: 30px;
+    font-weight: 300;
+}
