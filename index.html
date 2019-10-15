@@ -5,6 +5,7 @@
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
     <header class="container">
@@ -31,12 +32,13 @@
             <li><a href="#">Контакты</a></li>
           </ul>
       </nav>
+      <div class="decor-2"></div>
     </header>
     <main>
       <div class="container">
-        <div class="slider-wrapper">
+        <article class="slider-wrapper hidden">
           <div class="slider-image">
-            <img src="img/slider-1.png.png" alt="">
+            <img src="img/slider-1.png.png" width="384" height="486" alt="Самая длинная палка для селфи...">
           </div>
           <div class="slider-content">
             <div class="slider-slogan">
@@ -47,10 +49,97 @@
                 Самая длинная палка для селфи доступна в нашем магазине.
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
             </div>
+            <div class="slider-buttons">
+              <a class="slider-details" href="#">Подробнее</a>
+              <ul class="slider-indicators">
+                <li class="selected"></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+            <div class="slider-characters">
+              <div class="length">
+                <p>8,5 м</p>
+                <p>Длина палки</p>
+              </div>
+              <div class="weight">
+                <p>5 кг</p>
+                <p>Вес палки</p>
+              </div>
+              <div class="material">
+                <p>Карбон</p>
+                <p>Материал</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide-number">01</div>
+        </article>
+        <article class="slider-wrapper hidden">
+          <div class="slider-image">
+            <img src="img/slider-2.png.png" width="384" height="486" alt="Мотивирующие фитнес-браслеты...">
+          </div>
+          <div class="slider-content">
+            <div class="slider-slogan">
+              Худеем<br>
+              правильно!
+            </div>
+            <div class="slider-description">
+              Мотивирующие фитнес-браслеты помогут найти в себе силы 
+              не пропускать занятия и соблюдать диету.
+            </div>
+            <div class="slider-buttons">
+              <a class="slider-details" href="#">Подробнее</a>
+              <ul class="slider-indicators">
+                <li></li>
+                <li class="selected"></li>
+                <li></li>
+              </ul>
+            </div>
+            <div class="slider-characters">
+              <div class="length">
+                <p>48 часов</p>
+                <p>Без подзарядки</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide-number">02</div>
+        </article>
+      </article>
+      <article class="slider-wrapper">
+        <div class="slider-image">
+          <img src="img/slider-3.png.png" width="384" height="486" alt="Квадрокоптер...">
+        </div>
+        <div class="slider-content">
+          <div class="slider-slogan">
+            Порхает как бабочка,<br>
+            жалит как пчела!
+          </div>
+          <div class="slider-description">
+            Этот обычный, на первый взгляд, квадрокоптер оснащен 
+            мощным лазером, замаскированным под стандартную камеру.
+          </div>
+          <div class="slider-buttons">
+            <a class="slider-details" href="#">Подробнее</a>
+            <ul class="slider-indicators">
+              <li></li>
+              <li"></li>
+              <li class="selected"></li>
+            </ul>
+          </div>
+          <div class="slider-characters">
+            <div class="length">
+              <p>800 м</p>
+              <p>Дальность полёта</p>
+            </div>
+            <div class="length">
+              <p>50 м</p>
+              <p>Радиус поражения</p>
+            </div>
           </div>
         </div>
+        <div class="slide-number">03</div>
+      </article>
       </div>
-
     </main>
 </body>
 </html>
