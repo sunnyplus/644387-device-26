@@ -73,13 +73,45 @@
               <span class="price-from">от 0</span>
               <span class="price-to">до 5000</span>
             </fieldset>
-            <fieldset class="form-fieldset">
+            <fieldset class="form-fieldset form-fieldset--color">
               <legend class="legend-title">Цвет</legend>
-              <input type="checkbox" name="color" id="black" class="form-input hidden">
-              <label class="form-fieldset__label" for="black">Чёрный</label>
-              <input type="checkbox" name="color" id="white" class="form-input hidden">
-              <label class="form-fieldset__label" for="white">Белый</label>
+              <ul class="device-props">
+                <li class="device-props__item">
+                  <input type="checkbox" name="color" id="black" class="form-input hidden" checked>
+                  <label class="form-fieldset__label" for="black">Чёрный</label>
+                </li>
+                <li class="device-props__item">
+                  <input type="checkbox" name="color" id="white" class="form-input hidden">
+                  <label class="form-fieldset__label" for="white">Белый</label>
+                </li>
+                <li class="device-props__item">
+                  <input type="checkbox" name="color" id="blue" class="form-input hidden" checked>
+                  <label class="form-fieldset__label" for="blue">Синий</label>
+                </li>
+                <li class="device-props__item">
+                  <input type="checkbox" name="color" id="red" class="form-input hidden" checked>
+                  <label class="form-fieldset__label" for="red">Красный</label>
+                </li>
+                <li class="device-props__item">
+                  <input type="checkbox" name="color" id="light-red" class="form-input hidden">
+                  <label class="form-fieldset__label" for="light-red">Розовый</label>
+                </li>
+              </ul>
             </fieldset>
+            <fieldset class="form-fieldset">
+              <legend class="legend-title">Bluetooth</legend>
+              <ul class="device-props">
+                <li class="device-props__item">
+                  <input type="radio" name="bluetooth" id="bluetooth-yes" class="form-input hidden" checked>
+                  <label for="bluetooth-yes" class="form-fieldset__label form-fieldset__label--radio">Есть</label>
+                </li>
+                <li class="device-props__item">
+                  <input type="radio" name="bluetooth" class="form-input hidden" id="bluetooth-no">
+                  <label for="bluetooth-no" class="form-fieldset__label form-fieldset__label--radio">Нет</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button button--show" type="submit">Показать</button>
           </form>
         </div>
         <div class="catalog">
@@ -97,36 +129,44 @@
           </div>
           <div class="catalog__items">
             <div class="item">
-              <a href="#">
-                <img src="img/item-1.jpg" alt="Любительская селфи-палка">
-              </a>
+              <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+              <div class="item-buttons">
+                <button class="button button--show button--absolute" type="button">в корзину</button>
+                <button class="button-bookmark button-bookmark--absolute" type="button">Добавить к сравнению</button>
+              </div>
               <div class="title">
                 <p class="title__name">Любительская селфи-палка</p>
                 <p class="title__price">500 руб.</p>
               </div>
           </div>
           <div class="item">
-              <a href="#">
-                <img src="img/item-2.jpg" alt="Профессиональная селфи-палка ">
-              </a>
+              <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка ">
+              <div class="item-buttons">
+                <button class="button button--show button--absolute" type="button">в корзину</button>
+                <button class="button-bookmark button-bookmark--absolute" type="button">Добавить к сравнению</button>
+              </div>
               <div class="title">
                 <p class="title__name">Профессиональная селфи-палка</p>
                 <p class="title__price">1 500 руб.</p>
               </div>
           </div>
           <div class="item">
-              <a href="#">
-                <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка">
-              </a>
+              <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+              <div class="item-buttons">
+                <button class="button button--show button--absolute" type="button">в корзину</button>
+                <button class="button-bookmark button-bookmark--absolute" type="button">Добавить к сравнению</button>
+              </div>
               <div class="title">
                 <p class="title__name">Непотопляемая селфи-палка</p>
                 <p class="title__price">2 500 руб.</p>
               </div>
           </div>
           <div class="item">
-              <a href="#">
-                <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»">
-              </a>
+              <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+              <div class="item-buttons">
+                <button class="button button--show button--absolute" type="button">в корзину</button>
+                <button class="button-bookmark button-bookmark--absolute" type="button">Добавить к сравнению</button>
+              </div>
               <div class="title">
                 <p class="title__name">Селфи-палка «Следуй за мной»</p>
                 <p class="title__price">4 900 руб.</p>
@@ -134,13 +174,13 @@
           </div>
           </div>
           <div class="pagination">
-            <div class="pagination__back"><a href="">Назад</a></div>
+            <a class="pagination__back" href="">Назад</a>
             <div class="pagination__pages">
               <a class="active" href="#">1</a>
               <a href="#">2</a>
               <a href="#">3</a>
             </div>
-            <div class="pagination__forward"><a href="#">Вперёд</a></div>
+            <a class="pagination__forward" href="#">Вперёд</a>
           </div>
         </div>
       </div>

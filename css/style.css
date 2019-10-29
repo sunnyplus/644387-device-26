@@ -633,7 +633,7 @@ a.popular:active img, a.popular:active .popular-title{
     height: 222px;
     margin-bottom: 69px;
 }
-.contacts button{
+.button{
     width: 260px;
     color: #000000;
     font-family: "Gilroy - Extra Bold";
@@ -650,6 +650,40 @@ a.popular:active img, a.popular:active .popular-title{
     border:none;
     background-color: transparent;
     cursor: pointer;
+}
+.button--show{
+    width: 200px;
+}
+.button--absolute{
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%);
+    top:170px;
+}
+.button-bookmark--absolute{
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%);
+    top:210px;
+}
+.button-bookmark{
+    font-family: "Open Sans";
+    color: #000000;
+    font-size: 13px;
+    opacity: 0.5;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0.13px;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.button-bookmark:hover{
+    opacity: 1;
+}
+.button-bookmark:active{
+    opacity: 0.2;
+    outline: none;
 }
 .aboutus a{
     display: block;
@@ -670,10 +704,11 @@ a.popular:active img, a.popular:active .popular-title{
 .aboutus a:hover{
     background-color: #f0c52e;
 }
-.contacts button:hover{
+.button:hover{
     background-color: #f0c52e;
 }
-.aboutus a:active{
+.aboutus a:active,
+.button:active{
     color:rgba(0,0,0,0.3);
 }
 
@@ -849,6 +884,12 @@ h1.catalog-title{
     margin-right: 35px;
     margin-bottom: 45px;
 }
+.catalog-breadcrumbs a:hover{
+    color: rgba(0,0,0,0.6);
+}
+.catalog-breadcrumbs a:active{
+    color: rgba(0,0,0,0.1);
+}
 .catalog-breadcrumbs a:not(:last-of-type)::after{
     position: absolute;
     content: "";
@@ -897,12 +938,16 @@ h1.catalog-title{
 }
 .sort__type{
     color: #000000;
-    font-family: "Open Sans";
     font-size: 14px;
-    font-weight: 400;
     line-height: 18px;
     opacity: 0.3;
     margin-right: 30px;
+}
+.sort__type:not(.sort__type--active):hover{
+    opacity: 0.6;
+}
+.sort__type:not(.sort__type--active):active{
+    opacity: 1;
 }
 .sort__type--active{
     opacity: 1;
@@ -915,6 +960,12 @@ h1.catalog-title{
 }
 .sort-button{
     opacity: 0.2;
+}
+.sort-button:not(.sort-button--active):hover{
+    opacity: 0.4;
+}
+.sort-button:not(.sort-button--active):active{
+    opacity: 1;
 }
 .sort-button--up{
     transform:rotate(180deg);
@@ -931,6 +982,7 @@ h1.catalog-title{
     width: 360px;
 }
 .item{
+    position: relative;
     margin-bottom: 46px;
 }
 .item img{
@@ -941,6 +993,22 @@ h1.catalog-title{
 .item .title{
     display: flex;
     justify-content: space-between;
+}
+.item-buttons{
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.7);
+    opacity: 0;
+}
+.item-buttons:focus-within{
+    opacity: 1;
+}
+.item:hover .item-buttons{
+    opacity: 1;
 }
 .title__name{
     font-family: "Gilroy - Extra Bold";
@@ -964,14 +1032,15 @@ h1.catalog-title{
     justify-content: space-between;
     background-color: #efefef;
     width: 760px;
-    padding-left: 30px;
-    padding-right: 26px;
     margin-top: -10px;
     margin-bottom: 77px;
 }
-.pagination div{
+.pagination__back,
+.pagination__forward{
     padding-top: 24px;
     padding-bottom: 22px;
+    padding-left: 30px;
+    padding-right: 26px;
 }
 .pagination a{
     color: #000000;
@@ -988,9 +1057,25 @@ h1.catalog-title{
 .pagination__pages{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .pagination__pages a:not(:last-of-type){
     margin-right: 31px;
+}
+.pagination__pages a:not(.active):hover{
+    opacity: 0.6;
+}
+.pagination__pages a:not(.active):active{
+    opacity: 1;
+}
+.pagination__back:hover,
+.pagination__forward:hover{
+    background-color: #d8d8d8;
+}
+.pagination__back:active,
+.pagination__forward:active{
+    background-color: #d8d8d8;
+    opacity: 0.3;
 }
 /* форма фильтр */
 .form-filter{
@@ -1028,6 +1113,7 @@ h1.catalog-title{
     margin: 0;
     padding: 0;
     min-height: 110px;
+    margin-bottom: 30px;
 }
 .form-fieldset::before{
     position: absolute;
@@ -1036,6 +1122,9 @@ h1.catalog-title{
     width: 201px;
     height: 2px;
     background-color: #000;
+}
+.form-fieldset--color{
+    margin-bottom: 42px;
 }
 .filter__range{
     position: absolute;
@@ -1090,14 +1179,43 @@ h1.catalog-title{
 .price-to{
     left:90px;
 }
-.form-input{
-    display: block;
-}
 .form-fieldset__label{
-    display: block;
+    position: relative;
 }
-
-
+.form-fieldset__label::before{
+    position: absolute;
+    content: "";
+    left: -40px;
+    top:50%;
+    transform:translateY(-50%);
+    width: 27px;
+    height: 23px;
+    background: url("../img/checkbox-off.svg") no-repeat;
+}
+.form-input:checked + .form-fieldset__label::before{
+    background: url("../img/checkbox-on.svg") no-repeat;
+}
+.form-fieldset__label--radio::before{
+    width: 25px;
+    height: 25px;
+    background: url("../img/radio-off.svg") no-repeat;
+}
+.form-input:checked + .form-fieldset__label--radio::before{
+    background: url("../img/radio-on.svg") no-repeat;
+}
+.device-props{
+    list-style: none;
+    padding-left: 38px;
+    margin-top: 20px;
+}
+.device-props__item{
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: 0.14px;
+}
 
 
 
