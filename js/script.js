@@ -5,7 +5,13 @@ var sliderButton = document.querySelectorAll(".slider-indicators label"),
     mapModal = document.querySelector(".map-modal"),
     writeModal = document.querySelector(".writeus-modal"),
     map = document.querySelector(".map"),
-    writeus = document.querySelector(".contacts button");
+    writeus = document.querySelector(".contacts button"),
+    writeusButton = document.querySelector(".writeus-modal button"),
+    nameInput = document.querySelector('#name'),
+    emailInput = document.querySelector('#email'),
+    messageInput = document.querySelector('#message'),
+    serviceMenuLinks = document.querySelectorAll(".service-menu a");
+
 
 modalCloseMap.addEventListener('click', function(evt){
     evt.preventDefault();
@@ -23,6 +29,30 @@ writeus.addEventListener('click', function(evt){
     evt.preventDefault();
     writeModal.classList.remove('hidden');
 });
+writeusButton.addEventListener('click', function(evt){
+    evt.preventDefault();
+    if(!nameInput.value || !emailInput.value || !messageInput.value){
+        writeModal.classList.add('modal-error');
+        setTimeout(function(){
+            writeModal.classList.remove('modal-error');
+        },1000);
+    }
+    else{
+        writeModal.classList.add('hidden');
+    }
+});
+// сервис меню
+for(link of serviceMenuLinks){
+    link.addEventListener('click',function(evt){
+        evt.preventDefault();
+        for(elm of serviceMenuLinks){
+            elm.classList.remove("active");
+        }
+        this.classList.add("active");
+    });
+}
+    // link.classList.remove("active");
+
 // for(elm of sliderButton){
 //     elm.addEventListener("click", function(){
 //         var slider = this.htmlFor;

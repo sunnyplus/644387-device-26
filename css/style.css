@@ -14,6 +14,16 @@
         url('../fonts/gilroylight.woff2') format('woff2'),
         url('../fonts/gilroylight.woff') format('woff');
 }
+@keyframes modal-error{
+    20%{top:52%}
+    50%{top:50%}
+    50%{top:48%}
+    100%{top:50%}
+}
+@keyframes appearance{
+    from{top:-10%}
+    to{top:50%}
+}
 *, *::after, *::before{
     box-sizing: border-box;
 }
@@ -1315,7 +1325,14 @@ h1.catalog-title{
 .writeus-form__message textarea::placeholder{
     opacity: 0.4;
 }
-
+.modal-error{
+    animation-name: modal-error;
+    animation-duration:0.5s;
+}
+.modal-appearance{
+    animation-name: appearance;
+    animation-duration: 1s;
+}
 
 
 
