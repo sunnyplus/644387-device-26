@@ -628,6 +628,7 @@ a.popular:active img, a.popular:active .popular-title{
     position: relative;
 }
 .contacts .map{
+    display: block;
     margin-top: 40px;
     width: 560px;
     height: 222px;
@@ -1235,8 +1236,7 @@ h1.catalog-title{
     height: 559px;
     box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 }
-.map-modal::before{
-    content:"";
+.modal-close{
     position: absolute;
     top:22px;
     right: 22px;
@@ -1266,27 +1266,59 @@ h1.catalog-title{
     flex-wrap:wrap;
     justify-content: space-between;
     align-items: center;
+    padding-top: 93px;
     padding-right: 100px;
     padding-left: 100px;
 }
 .writeus-form__message{
     flex-basis: 100%;
+    margin-bottom: 37px;
+}
+.writeus-form__label{
+    display: block;
+    color: #000000;
+    font-family: "Gilroy - Extra Bold";
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 7px;
+}
+.writeus-form__label--textarea{
+    letter-spacing: 0.2px;
+}
+.writeus-form__input{
+    color: #464646;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    padding:16px 5px 16px 20px;
+    background-color: #f2f2f2;
+    width: 360px;
+    border:none;
+    margin-bottom: 34px;
+}
+.writeus-form__input::placeholder{
+    opacity: 0.4;
 }
 .writeus-form__message textarea{
-    width: 100%;
-    min-height: 156px;
-    border: none;
-    background-color: #f2f2f2;
-    padding-top: 9px;
-    padding-left: 20px;
-}
-.writeus-form__message textarea::placeholder{
-    opacity: 0.4;
     color: #464646;
     font-family: "Open Sans";
     font-size: 14px;
     line-height: 18px;
+    width: 100%;
+    min-height: 156px;
+    border: none;
+    background-color: #f2f2f2;
+    padding-top: 15px;
+    padding-left: 20px;
 }
+.writeus-form__message textarea::placeholder{
+    opacity: 0.4;
+}
+
+
+
+
 
 .visually-hidden:not(:focus):not(:active) {
     position: absolute;
