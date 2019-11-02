@@ -262,7 +262,7 @@ header.container--catalog{
 }
 .slide-number{
     position: absolute;
-    right: 75px;
+    right: 65px;
     top: -130px;
     width: 166px;
     height: 131px;
@@ -340,6 +340,7 @@ header.container--catalog{
     font-weight: 300;
     padding-right: 10px;
     padding-bottom: 43px;
+    width: 500px;
 }
 .slider-buttons{
     position: relative;
@@ -365,6 +366,10 @@ header.container--catalog{
     color:rgba(0,0,0,0.3);
 }
 .slider-indicators{
+    position: absolute;
+    z-index: 5;
+    right: 82px;
+    top:215px;
     display: flex;
     justify-content: space-between;
     align-items: center;

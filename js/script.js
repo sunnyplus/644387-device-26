@@ -46,10 +46,10 @@ writeusButton.addEventListener('click', function(evt){
     }
 });
 // сервис меню
-for(link of serviceMenuLinks){
+for(var link of serviceMenuLinks){
     link.addEventListener('click',function(evt){
         evt.preventDefault();
-        for(elm of serviceMenuLinks){ //remove active class
+        for(var elm of serviceMenuLinks){ //remove active class
             elm.classList.remove("active");
         }
         this.classList.add("active"); // add active class
