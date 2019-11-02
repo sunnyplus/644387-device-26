@@ -55,7 +55,7 @@ body a{
 header.container{
     position: relative;
     min-height: 299px;
-    background-color: rgba(240,197,46,0.5);
+    background-color: #f7e296;
     padding: 33px 61px 63px 60px;
     margin-top: 40px;
 }
@@ -221,8 +221,13 @@ header.container--catalog{
 .catalog-nav{
     display: flex;
     position: absolute;
-    bottom: 35px;
-    z-index: 22;
+    background-color: #f7e296;
+    width: 100%;
+    padding-left: 60px;
+    padding-bottom: 25px;
+    padding-top: 30px;
+    left: 0;
+    z-index: 2;
 }
 .catalog-nav a{
     display: block;
@@ -257,8 +262,8 @@ header.container--catalog{
 }
 .slide-number{
     position: absolute;
-    right:5px;
-    top:-13px;
+    right: 75px;
+    top: -130px;
     width: 166px;
     height: 131px;
     color: #ffffff;
@@ -288,6 +293,7 @@ header.container--catalog{
     align-items: flex-start;
     position: absolute;
     top: -111px;
+    z-index: 1;
 }
 .slider-image{
     line-height: 0;
@@ -377,11 +383,11 @@ header.container--catalog{
     content:"";
     width: 12px;
     height: 12px;
-    background:url("../img/radio-off.svg") no-repeat;
+    background:url("../img/slider-button-empty.svg") no-repeat;
     background-size: contain;
 }
 .slider-indicators input:checked + label::before{
-    background:url("../img/radio-on.svg") no-repeat;
+    background:url("../img/slider-button.svg") no-repeat;
     background-size: contain;
 }
 .slider-characters{

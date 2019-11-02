@@ -10,7 +10,11 @@ var sliderButton = document.querySelectorAll(".slider-indicators label"),
     nameInput = document.querySelector('#name'),
     emailInput = document.querySelector('#email'),
     messageInput = document.querySelector('#message'),
-    serviceMenuLinks = document.querySelectorAll(".service-menu a");
+    serviceMenuLinks = document.querySelectorAll(".service-menu a"),
+    mainMenu = document.querySelector(".main-menu"),
+    catalogNav = document.querySelector(".catalog-nav"),
+    sliderIndicators = document.querySelectorAll(".slider-indicators label"),
+    serviceConditions = document.querySelectorAll(".service-conditions");
 
 
 modalCloseMap.addEventListener('click', function(evt){
@@ -45,9 +49,35 @@ writeusButton.addEventListener('click', function(evt){
 for(link of serviceMenuLinks){
     link.addEventListener('click',function(evt){
         evt.preventDefault();
-        for(elm of serviceMenuLinks){
+        for(elm of serviceMenuLinks){ //remove active class
             elm.classList.remove("active");
         }
-        this.classList.add("active");
+        this.classList.add("active"); // add active class
+        // console.log(this.dataset.service);
+        for(var k=0;k<serviceConditions.length;k++){
+            serviceConditions[k].classList.add("hidden");
+            if(serviceConditions[k].classList.contains(this.dataset.service)){
+                serviceConditions[k].classList.remove("hidden");
+            }
+        }
     });
+}
+
+
+mainMenu.addEventListener('click',function(evt){
+    evt.preventDefault();
+    catalogNav.classList.remove("hidden");
+});
+
+
+
+for(var i=0; i<sliderIndicators.length; i++){
+    sliderIndicators[i].addEventListener('click',function(){
+        for(var j=0;j<sliders.length;j++){
+            sliders[j].classList.add("hidden");
+        }
+        var slider = document.querySelector("article[data-slider='"+ this.htmlFor +"']");
+        slider.classList.remove("hidden");
+        document.querySelector(".slide-number").innerHTML = this.htmlFor;
+    })
 }

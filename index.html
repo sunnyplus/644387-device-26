@@ -36,7 +36,7 @@
             <a href="#">Контакты</a>
       </nav>
       <div class="decor-2"></div>
-      <nav class="catalog-nav">
+      <nav class="catalog-nav hidden">
         <div class="first-column">
           <a href="#">Виртуальная реальность</a>
           <a href="#">Моноподы для селфи</a>
@@ -54,7 +54,7 @@
     <main>
       <div class="container">
         <div class="slides-wrapper">
-          <article data-slider="slider-1" class="slider-wrapper">
+          <article data-slider="01" class="slider-wrapper hidden">
             <div class="slider-image image-1">
               <img src="img/slider-1.png.png" width="384" height="486" alt="Самая длинная палка для селфи...">
             </div>
@@ -70,9 +70,9 @@
                 <div class="slider-buttons">
                   <a class="slider-details" href="#">Подробнее</a>
                   <ul class="slider-indicators">
-                    <li><input class="hidden" type="radio" name="indicator" id="slider-1" checked><label for="slider-1"></label></li>
-                    <li><input class="hidden" type="radio" name="indicator" id="slider-2"><label for="slider-2"></label></li>
-                    <li><input class="hidden" type="radio" name="indicator" id="slider-3"><label for="slider-3"></label></li>
+                    <li><input class="hidden" type="radio" name="indicator" id="slider-1" checked><label for="01"></label></li>
+                    <li><input class="hidden" type="radio" name="indicator" id="slider-2"><label for="02"></label></li>
+                    <li><input class="hidden" type="radio" name="indicator" id="slider-3"><label for="03"></label></li>
                   </ul>
                 </div>
                 <div class="slider-characters">
@@ -89,10 +89,9 @@
                     <p>Материал</p>
                   </div>
                 </div>
-                <div class="slide-number">01</div>
               </div>
             </article>
-          <article data-slider="slider-2" class="slider-wrapper hidden">
+          <article data-slider="02" class="slider-wrapper">
             <div class="slider-image image-2">
               <img src="img/slider-2.png.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты...">
             </div>
@@ -108,9 +107,9 @@
               <div class="slider-buttons">
                 <a class="slider-details" href="#">Подробнее</a>
                 <ul class="slider-indicators">
-                  <li><input class="hidden" type="radio" name="indicator" id="slider-1"><label for="slider-1"></label></li>
-                  <li><input class="hidden" type="radio" name="indicator" id="slider-2" checked><label for="slider-2"></label></li>
-                  <li><input class="hidden" type="radio" name="indicator" id="slider-3"><label for="slider-3"></label></li>
+                  <li><input class="hidden" type="radio" name="indicator" id="slider-1"><label for="01"></label></li>
+                  <li><input class="hidden" type="radio" name="indicator" id="slider-2" checked><label for="02"></label></li>
+                  <li><input class="hidden" type="radio" name="indicator" id="slider-3"><label for="03"></label></li>
                 </ul>
               </div>
               <div class="slider-characters">
@@ -119,10 +118,9 @@
                   <p>Без подзарядки</p>
                 </div>
               </div>
-              <div class="slide-number">02</div>
             </div>
           </article>
-          <article data-slider="slider-3" class="slider-wrapper hidden">
+          <article data-slider="03" class="slider-wrapper hidden">
             <div class="slider-image image-3">
               <img src="img/slider-3.png.png" width="526" height="334" alt="Квадрокоптер...">
             </div>
@@ -138,9 +136,9 @@
               <div class="slider-buttons">
                 <a class="slider-details" href="#">Подробнее</a>
                 <ul class="slider-indicators">
-                  <li><input class="hidden" type="radio" name="indicator" id="slider-1"><label for="slider-1"></label></li>
-                  <li><input class="hidden" type="radio" name="indicator" id="slider-2"><label for="slider-2"></label></li>
-                  <li><input class="hidden" type="radio" name="indicator" id="slider-3" checked><label for="slider-3"></label></li>
+                  <li><input class="hidden" type="radio" name="indicator" id="slider-1"><label for="01"></label></li>
+                  <li><input class="hidden" type="radio" name="indicator" id="slider-2"><label for="02"></label></li>
+                  <li><input class="hidden" type="radio" name="indicator" id="slider-3" checked><label for="03"></label></li>
                 </ul>
               </div>
               <div class="slider-characters">
@@ -153,9 +151,9 @@
                   <p>Радиус поражения</p>
                 </div>
               </div>
-              <div class="slide-number">03</div>
             </div>
           </article>
+          <div class="slide-number">01</div>
         </div>
       </div>
       <section class="popular-products container">
@@ -187,9 +185,9 @@
       <section class="services">
         <div class="container">
           <div class="service-menu">
-            <a class="active" href="#">Доставка</a>
-            <a href="#">Гарантия</a>
-            <a href="#">Кредит</a>
+            <a class="active" data-service="delivery" href="#">Доставка</a>
+            <a data-service="warranty" href="#">Гарантия</a>
+            <a data-service="credit" href="#">Кредит</a>
           </div>
           <div class="service-conditions delivery">
             <h2>Доставка</h2>
