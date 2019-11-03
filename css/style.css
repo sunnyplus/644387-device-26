@@ -1313,6 +1313,13 @@ h1.catalog-title{
     opacity: 0.5;
     background: url("../img/modal-close.svg") no-repeat;
     cursor: pointer;
+    border:none;
+}
+.modal-close:hover{
+    opacity: 1;
+}
+.modal-close:active{
+    opacity: 0.3;
 }
 .map-modal iframe{
     width: 100%;
@@ -1354,7 +1361,7 @@ h1.catalog-title{
     letter-spacing: 0.2px;
 }
 .writeus-form__input{
-    color: #464646;
+    color: rgb(70, 70, 70,0.4);
     font-family: "Open Sans";
     font-size: 14px;
     font-weight: 400;
@@ -1369,7 +1376,7 @@ h1.catalog-title{
     opacity: 0.4;
 }
 .writeus-form__message textarea{
-    color: #464646;
+    color: rgb(70, 70, 70,0.4);
     font-family: "Open Sans";
     font-size: 14px;
     line-height: 18px;
@@ -1382,6 +1389,21 @@ h1.catalog-title{
 }
 .writeus-form__message textarea::placeholder{
     opacity: 0.4;
+}
+.writeus-form input:invalid:not(:placeholder-shown),
+.writeus-form textarea:invalid:not(:placeholder-shown){
+    background-color: #edb5b5;
+    opacity: 0.5;
+}
+.writeus-form input:focus,
+.writeus-form textarea:focus{
+    outline: 3px solid #f0c52e;
+    background-color: #ffffff;
+    color: #464646;
+}
+.writeus-form input:hover,
+.writeus-form textarea:hover{
+    background-color: #eaeaea;
 }
 .modal-error{
     animation-name: modal-error;
