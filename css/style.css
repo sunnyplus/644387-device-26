@@ -1,5 +1,5 @@
 @font-face{
-    font-family: "Gilroy - Extra Bold";
+    font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     src:local('Gilroyextrabold'),local('Gilroy-Extrabold'),
@@ -171,7 +171,7 @@ header.container--catalog{
     width: 273px;
 }
 .main-nav a{
-    font-family: "Gilroy - Extra Bold";
+    font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
@@ -284,7 +284,7 @@ header.container--catalog{
     width: 166px;
     height: 131px;
     color: #ffffff;
-    font-family: "Gilroy - Extra Bold";
+    font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
     font-size: 179px;
     font-weight: 400;
     line-height: 179.2px;
@@ -345,7 +345,7 @@ header.container--catalog{
     margin-right: 53px;
 }
 .slider-slogan{
-    font-family: "Gilroy - Extra Bold";
+    font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
     font-size: 47px;
     line-height: 56px;
     letter-spacing: 0.67px;
@@ -363,7 +363,7 @@ header.container--catalog{
     position: relative;
     display: flex;
     justify-content: space-between;
-    font-family: "Gilroy - Extra Bold";
+    font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
@@ -435,7 +435,7 @@ header.container--catalog{
 .weight p:last-of-type,
 .material p:last-of-type{
     color: #464646;
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 13px;
     font-weight: 300;
     line-height: 20px;
@@ -470,7 +470,7 @@ a.popular:active img, a.popular:active .popular-title{
 }
 .popular-title{
     color: #000000;
-    font-family: "Gilroy - Extra Bold";
+    font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -491,7 +491,7 @@ a.popular:active img, a.popular:active .popular-title{
     display: block;
     position: relative;
     font-size: 18px;
-    font-family: "Gilroy - Extra Bold";
+    font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 3.65px;
@@ -540,7 +540,7 @@ a.popular:active img, a.popular:active .popular-title{
     top:-8px;
 }
 .service-conditions h2{
-    font-family: "Gilroy - Extra Bold";
+    font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
     font-size: 47px;
     line-height: 48px;
     font-weight: 400;
@@ -551,7 +551,7 @@ a.popular:active img, a.popular:active .popular-title{
 .service-conditions p{
     color: #464646;
     font-weight: 300;
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     line-height: 30px;
     letter-spacing: 0.20px;
     padding-right: 130px;
@@ -609,7 +609,7 @@ a.popular:active img, a.popular:active .popular-title{
 }
 .info-block h2{
     color: #000000;
-    font-family: "Gilroy - Extra Bold";
+    font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
     font-size: 47px;
     font-weight: 400;
     line-height: 48px;
@@ -619,7 +619,7 @@ a.popular:active img, a.popular:active .popular-title{
 }
 .info-block p{
     color: #464646;
-    font-family: "Open Sans Light";
+    font-family: "Open Sans Light", "Arial", sans-serif;
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
@@ -632,7 +632,7 @@ a.popular:active img, a.popular:active .popular-title{
     margin-top: 67px;
     margin-left: 35px;
     margin-bottom: 55px;
-    font-family: "Gilroy - Extra Bold";
+    font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 40px;
@@ -679,7 +679,7 @@ a.popular:active img, a.popular:active .popular-title{
 .button{
     width: 260px;
     color: #000000;
-    font-family: "Gilroy - Extra Bold";
+    font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -710,7 +710,7 @@ a.popular:active img, a.popular:active .popular-title{
     top:210px;
 }
 .button-bookmark{
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     color: #000000;
     font-size: 13px;
     opacity: 0.5;
@@ -732,7 +732,7 @@ a.popular:active img, a.popular:active .popular-title{
     display: block;
     width: 260px;
     color: #000000;
-    font-family: "Gilroy - Extra Bold";
+    font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -754,9 +754,6 @@ a.popular:active img, a.popular:active .popular-title{
 .button:active{
     color:rgba(0,0,0,0.3);
 }
-
-
-
 /* футер */
 .footer{
     background-color: #464646;
@@ -779,7 +776,7 @@ a.popular:active img, a.popular:active .popular-title{
 .left-block p{
     margin: 0;
     color: #ffffff;
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
@@ -814,7 +811,7 @@ a.popular:active img, a.popular:active .popular-title{
 }
 .footer-menu a{
     margin-right: 33px;
-    font-family: "Gilroy - Extra Bold";
+    font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
     color: #ffffff;
     font-size: 18px;
     font-weight: 400;
@@ -847,7 +844,7 @@ a.popular:active img, a.popular:active .popular-title{
     padding-top: 8px;
     padding-bottom: 8px;
     color:rgba(255,255,255,0.7);
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 15px;
     font-weight: 300;
     line-height: 36px;
@@ -868,7 +865,7 @@ a.popular:active img, a.popular:active .popular-title{
 }
 .second-row > a{
     color: #ffffff;
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
@@ -896,15 +893,11 @@ a.popular:active img, a.popular:active .popular-title{
 .social a:active{
     opacity: 0.1;
 }
-
-
-
 /* мэйн каталога товаров */
-
 h1.catalog-title{
     margin: 0;
     color: #000000;
-    font-family: "Gilroy - Extra Bold";
+    font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
     font-size: 47px;
     font-weight: 400;
     line-height: 48px;
@@ -919,7 +912,7 @@ h1.catalog-title{
 .catalog-breadcrumbs a{
     position: relative;
     color: rgba(0,0,0,0.3);
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
@@ -979,7 +972,7 @@ h1.catalog-title{
 }
 .sort__title{
     color: #000000;
-    font-family: "Gilroy - Extra Bold";
+    font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -1053,7 +1046,7 @@ h1.catalog-title{
     position: absolute;
     content:"new";
     color: #000000;
-    font-family: "Gilroy - Extra Bold";
+    font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -1088,7 +1081,7 @@ h1.catalog-title{
     opacity: 1;
 }
 .title__name{
-    font-family: "Gilroy - Extra Bold";
+    font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -1122,7 +1115,7 @@ h1.catalog-title{
 }
 .pagination a{
     color: #000000;
-    font-family: "Gilroy - Extra Bold";
+    font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -1161,7 +1154,7 @@ h1.catalog-title{
 }
 .legend-title{
     color: #000000;
-    font-family: "Gilroy - Extra Bold";
+    font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -1172,7 +1165,7 @@ h1.catalog-title{
 }
 .filter__title{
     color: #000000;
-    font-family: "Gilroy - Extra Bold";
+    font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -1288,7 +1281,7 @@ h1.catalog-title{
 }
 .device-props__item{
     color: #000000;
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 40px;
@@ -1352,7 +1345,7 @@ h1.catalog-title{
 .writeus-form__label{
     display: block;
     color: #000000;
-    font-family: "Gilroy - Extra Bold";
+    font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 7px;
@@ -1362,7 +1355,7 @@ h1.catalog-title{
 }
 .writeus-form__input{
     color: rgb(70, 70, 70,0.4);
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -1377,7 +1370,7 @@ h1.catalog-title{
 }
 .writeus-form__message textarea{
     color: rgb(70, 70, 70,0.4);
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
     width: 100%;
@@ -1413,10 +1406,6 @@ h1.catalog-title{
     animation-name: appearance;
     animation-duration: 1s;
 }
-
-
-
-
 .visually-hidden:not(:focus):not(:active) {
     position: absolute;
     width: 1px;
