@@ -27,7 +27,7 @@
 *, *::after, *::before{
     box-sizing: border-box;
 }
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:active) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -37,6 +37,9 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+.invisible{
+    opacity: 0;
+}
 body{
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
@@ -101,6 +104,9 @@ header.container--catalog{
 }
 .search-block{
     position: relative;
+    margin-right: 115px;
+}
+.search-block--loggedin{
     margin-right: 268px;
 }
 .search-block::before{
@@ -112,6 +118,9 @@ header.container--catalog{
     height: 16px;
     background: url('../img/search.svg') no-repeat;
     left: -35px;
+}
+.search-block input:focus{
+    outline: none;
 }
 .search-button{
     position: absolute;
@@ -136,6 +145,14 @@ header.container--catalog{
 }
 .search-block input:focus ~ .search-button{
     opacity: 1;
+}
+.search-button:hover{
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+.search-button:active{
+    color:rgba(255,255,255,0.3);
 }
 .logo-top{
     position: absolute;
@@ -369,7 +386,7 @@ header.container--catalog{
     position: absolute;
     z-index: 5;
     right: 82px;
-    top:215px;
+    top:200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -386,6 +403,7 @@ header.container--catalog{
 .slider-indicators label::before{
     position: absolute;
     content:"";
+    border-radius:50%;
     width: 12px;
     height: 12px;
     background:url("../img/slider-button-empty.svg") no-repeat;
@@ -394,6 +412,9 @@ header.container--catalog{
 .slider-indicators input:checked + label::before{
     background:url("../img/slider-button.svg") no-repeat;
     background-size: contain;
+}
+.slider-indicators input:focus + label::before{
+    box-shadow:0 0 0px 2px rgb(94, 158, 214);
 }
 .slider-characters{
     display: flex;
@@ -948,12 +969,13 @@ h1.catalog-title{
     background-color: #ebebeb;
     margin-bottom: 69px;
     padding-left: 72px;
+    padding-bottom: 23px;
+    padding-top: 23px;
 }
 .sort{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    min-height: 70px;
 }
 .sort__title{
     color: #000000;
@@ -1019,6 +1041,31 @@ h1.catalog-title{
     width: 360px;
     height: 380px;
     margin-bottom: 32px;
+}
+.item-new{
+    position: relative;
+}
+.item-new::before{
+    display: flex;
+    justify-content: center;
+    opacity: 0.2;
+    align-items: center;
+    position: absolute;
+    content:"new";
+    color: #000000;
+    font-family: "Gilroy - Extra Bold";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.25px;
+    width: 60px;
+    height: 61px;
+    border: 2px solid #000000;
+    border-radius:50%;
+    right: 27px;
+    top:28px;
+    z-index: 50;
 }
 .item .title{
     display: flex;
